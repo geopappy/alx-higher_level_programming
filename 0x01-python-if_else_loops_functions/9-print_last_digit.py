@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-def islower(c):
-
-    if ord(c) in range(ord('A'), ord('Z') + 1):
-        return True
-    else:
-        return False
+def print_last_digit(number):
+    last_digit = abs(number) % 10
+    print(last_digit, end="")
+    return last_digit
