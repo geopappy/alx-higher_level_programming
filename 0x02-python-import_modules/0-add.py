@@ -2,12 +2,8 @@
 from add_0 import add
 
 
-def sum():
+if __name__ == "__main__":
     a = 1
     b = 2
 
     print("{} + {} = {}".format(a, b, add(a, b)))
-
-
-if __name__ == "__main__":
-    sum()
