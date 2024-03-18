@@ -1,5 +1,4 @@
 #!/usr/bin/python3
+import string
 
-for i in range(ord('A'), ord('Z') + 1):
-    print('{}'.format(chr(i)), end='')
-print()
+print(string.ascii_uppercase)
