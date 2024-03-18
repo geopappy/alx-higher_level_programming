@@ -19,12 +19,11 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-    match opp:
-        case "+":
-            print("{} {} {} = {}".format(a, opp, b, add(a, b)))
-        case "-":
-            print("{} {} {} = {}".format(a,       opp, b, sub(a, b)))
-        case "*":
-            print("{} {} {} = {}".format(a,       opp, b, mul(a, b)))
-        case "/":
-            print("{} {} {} = {}".format(a,       opp, b, div(a, b)))
+    if opp == "+":
+        print("{} {} {} = {}".format(a, opp, b, add(a, b)))
+    elif opp == "-":
+        print("{} {} {} = {}".format(a, opp, b, sub(a, b)))
+    elif opp == "*":
+        print("{} {} {} = {}".format(a, opp, b, mul(a, b)))
+    elif opp == "/":
+        print("{} {} {} = {}".format(a, opp, b, div(a, b)))
