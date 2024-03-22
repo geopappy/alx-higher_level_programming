@@ -33,9 +33,8 @@ def roman_to_int(roman_string):
     for letter in roman_list:
         if letter not in roman_dict:
             return 0
-        if letter in roman_dict:
-            result += roman_dict[letter]
-            if roman_dict[letter] > prev:
-                result -= prev * 2
-            prev = roman_dict[letter]
+        result += roman_dict[letter]
+        if roman_dict[letter] > prev:
+            result -= prev * 2
+        prev = roman_dict[letter]
     return (result)
