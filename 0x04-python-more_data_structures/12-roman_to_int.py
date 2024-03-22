@@ -14,5 +14,5 @@ def roman_to_int(roman_string):
         result += value
         if value > prev_value:
             result -= prev_value*2
-            prev_value = result
+            prev_value = value
     return result
