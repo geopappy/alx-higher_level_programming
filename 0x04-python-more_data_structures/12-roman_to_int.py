@@ -20,21 +20,18 @@ def roman_to_int(roman_string):
 
 
 def roman_to_int(roman_string):
-    """
-    converts a roman numeral character into the respective integer
-    """
     if roman_string is None or type(roman_string) is not str:
-        return (0)
-    roman_dict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100,
-                  'D': 500, 'M': 1000}
-    roman_list = roman_string.upper()
-    result = 0
-    prev = 0
-    for letter in roman_list:
-        if letter not in roman_dict:
+        return 0
+    roman_dic = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M':
+                 1000}
+    roman_list = list(roman_string.upper())
+    prev_value, result = 0, 0
+    for s in roman_list:
+        if s not in roman_dic:
             return 0
-        result += roman_dict[letter]
-        if roman_dict[letter] > prev:
-            result -= prev * 2
-        prev = roman_dict[letter]
-    return (result)
+        value = roman_dic.get(s)
+        result += value
+        if value > prev_value:
+            result -= prev_value*2
+        prev_value = value
+    return result
