@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 0-square.py by Yomi
-''' creates a Square class '''
+""" creates a Square class """
 
 class Square:
-    ''' it does nothing'''
+    """ it does nothing """
     pass
