@@ -1,5 +1,6 @@
 #!/usr/bin/python3
+''' creates a Square class '''
 
-class square:
+class Square:
     ''' it does nothing'''
     pass
