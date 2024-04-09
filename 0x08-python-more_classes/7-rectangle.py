@@ -111,7 +111,7 @@ class Rectangle:
             return ''
         rec = ''
         for i in range(self.__height):
-            rec += (Rectangle.print_symbol * self.__width) + '\n'
+            rec += (str(self.print_symbol) * self.__width) + '\n'
 
         return rec.rstrip()
 
