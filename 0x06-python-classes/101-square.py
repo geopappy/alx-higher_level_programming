@@ -48,7 +48,7 @@ class Square:
         else:
             for _ in range(self.__position[1]):
                 print()
-            for _ in range(self.size):
+            for i in range(self.size):
                 print(' ' * self.__position[0] + "#" * self.size)
 
     def __str__(self):
@@ -63,7 +63,7 @@ class Square:
         for _ in range(self.__size):
             square_str += " " * self.__position[0] + "#" * self.__size + "\n"
 
-        return square_str
+        return square_str.rstrip()
 
     @property
     def size(self):
