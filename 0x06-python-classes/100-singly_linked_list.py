@@ -88,6 +88,7 @@ class SinglyLinkedList:
         else:
             new_node.next_node = current.next_node
             current.next_node = new_node
+
     def __str__(self):
         """ Returns string representation of linked list
 
