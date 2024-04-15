@@ -8,8 +8,7 @@ class MyList(list):
         pass
 
     def print_sorted(self):
-        """Prints the soretd list"""
-
+        """Prints the sorted list"""
         list_copy = self[:]
         list_copy.sort()
         print(list_copy)
