@@ -3,10 +3,10 @@
 
 
 class MyList(list):
-    """Initializing the class"""
+    """Initializing the class
     def __init__(self):
         pass
-
+"""
     def print_sorted(self):
         """Prints the sorted list"""
         print(sorted(self))
