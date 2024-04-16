@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""Documenting module"""
+"""This module contain an inherited class checking function"""
 
 
 def inherits_from(obj, a_class):
