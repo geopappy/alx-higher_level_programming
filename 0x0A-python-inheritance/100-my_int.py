@@ -2,7 +2,7 @@
 """ Defines class Myint"""
 
 
-class Myint(int):
+class MyInt(int):
     """class that reverses the equal and not equal to"""
 
     def __eq__(self, other):
