@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Defines class Myint"""
+
 
 class Myint(int):
     """class that reverses the equal and not equal to"""
