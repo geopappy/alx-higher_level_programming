@@ -2,9 +2,9 @@
 """1-write_file.py module"""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
-    write to a file.
+    append to a file.
     Args:
         filename: The file to write to.
         text: content to write
