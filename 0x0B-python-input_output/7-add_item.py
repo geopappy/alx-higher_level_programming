@@ -17,7 +17,6 @@ filename = "add_item.json"
 
 if not path.exists(filename):
     save([], filename)
-else:
-    items = load(filename)
-    items.extend(sys.argv[1:])
-    save(items, filename)
+items = load(filename)
+items.extend(sys.argv[1:])
+save(items, filename)
