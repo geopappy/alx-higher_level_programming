@@ -12,5 +12,5 @@ class Student():
     def to_json(self, attrs=None):
         if attrs is None:
             attrs = ['first_name', 'last_name', 'age']
-        return {key: value if key in attrs for key value in
-                self.__dict__.items()}
+        return {key: value for key, value in self.__dict__.items() if key in
+                attrs}
